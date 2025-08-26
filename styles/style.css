@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Spline+Sans:wght@500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --fs-75: 75px;
+    --fs-48: 48px;
+    --fs-46: 46px;
+    --fs-40: 40px;
+    --fs-36: 36px;
+    --fs-32: 32px;
+    --fs-28: 28px;
+    --fs-30: 30px;
+    --fs-24: 24px;
+    --fs-22: 22px;
+    --fs-20: 20px;
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-regular: 400;
+
+    /* fonts */
+
+    /* color */
+    --primary-color: black;
+    --secondary-color: white;
+    --tertiary-color: navy;
+
+    /* bgcolor */
+    --primary-bg-color: #FF6B00;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: relative;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+  font-size: var(--fs-24);
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+  color: #ff9800;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Menu Button */
+.menu_btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+#check {
+  display: none;
+}
+
+
+
+#searchBox {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* footer st */
+
+footer {
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .contain {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+footer .contain .logo {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .contain .logo img {
+    width: 150px;
+    object-fit: contain;
+
+}
+
+footer .contain .content {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .contain .content .links {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+
+footer .contain .content .links h2 {
+    font-size: var(--fs-30);
+}
+footer .contain .content .links h1 {
+    font-size: var(--fs-30);
+}
+
+footer .contain .content .links .text {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer .contain .content .links .text a{
+    text-decoration: none;
+    color: white;
+
+}
+
+footer .contain .content .shop-cat {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    
+    
+}
+footer .contain .content .shop-cat h2{
+    font-size: var(--fs-30);
+
+}
+
+footer .contain .content .shop-cat  .textt {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .contain .content .shop-cat  .textt a{
+    text-decoration: none;
+    color: white;
+
+}
+footer .contain .content .follow {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    
+    
+}
+footer .contain .content .follow h2{
+    font-size: var(--fs-30);
+
+
+}
+
+footer .contain .content .follow .ic {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+
+}
+
+footer .contain .content .follow .ic a {
+    width: 80%;
+    color: white;
+}
+
+footer .contain .privacy {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .contain .privacy a p{
+    list-style: none;
+    color: white;
+
+}
+footer .contain .privacy  a{
+    font-size: 20px;
+    text-decoration: none;
+
+}
+footer .contain .content .menu{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+footer .contain .content .menu h1{
+    font-size: var(--fs-30);
+    color: white;
+}
+footer .contain .content .menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer .contain .content .menu ul li a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: var(--fs-20);
+}
+/* footer end */
+
+
+
+/* media query */
+
+@media only screen and (max-width:1330px) {
+    header nav .search .content {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width:1240px) {
+    /* header nav .navs {
+        width: 40%;
+
+    } */
+
+}
+
+@media only screen and (max-width:1112px) {
+    footer .contain .content .links {
+        width: 30%;
+    }
+
+
+}
+
+@media only screen and (max-width:985px) {
+header .navbar .logo {
+    width: 15%;
+    height: 10%;
+}
+header .navbar .logo img{
+    width: 70%;
+    height: 40%;
+    object-fit: contain;
+}
+.icons i{
+    font-size: var(--fs-28);
+}
+header .navbar .top-row .navs a h2{
+    font-size: var(--fs-24);
+
+}
+}
+
+@media only screen and (max-width:927px) {
+    footer {
+        height: 100vh;
+    }
+
+    footer .contain .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer .contain .content .links {
+        width: 35%;
+    }
+
+    footer .contain .content .shop-cat {
+        width: 30%;
+    }
+
+
+}
+
+@media only screen and (max-width:927px) {
+    footer{
+        height: 130vh;
+    }
+    footer .contain .content .links h1 {
+        font-size: var(--fs-26);
+    }
+
+    footer .contain .content .links .text h3 {
+        font-size: var(--fs-22);
+    }
+
+    footer .contain .content .shop-cat h1 {
+        font-size: var(--fs-26);
+
+    }
+
+    footer .contain .content .follow h1 {
+        font-size: var(--fs-26);
+
+    }
+footer .contain .content {
+    height: 50%;
+}
+footer .contain .content .menu{
+    /* height: 40%; */
+    /* background-color: red; */
+}
+footer .contain .content .follow {
+    /* height: 30%; */
+    /* background-color: aqua; */
+}
+footer .contain .content .links {
+    /* height: 40%; */
+    /* background-color: bisque; */
+}
+footer .contain .privacy {
+    width: 100%;
+    /* background-color: blue; */
+    height: 30%;
+    align-items: center;
+    justify-content: end;
+}
+}
+
+
+@media only screen and (max-width:842px) {
+    header .navbar .top-row .navs a h2{
+    font-size: var(--fs-22);
+
+}
+}
+
+@media only screen and (max-width:769px) {
+  .search-row {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-row input {
+    width: 70%;
+    height: 100%;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* navbar height */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+    z-index: 99;
+    text-align: center;
+  }
+
+  #check:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .menu_btn {
+    width: 35px;
+    height: 40px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .top-row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    /* background-color: #FF6B00; */
+  }
+  .icons i,
+  .menu_btn i {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+}
+@media only screen and (max-width:660px) {
+    footer {
+        height: 130vh;
+    }
+    
+    footer .contain {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer .contain .content {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: blueviolet; */
+    }
+    
+    footer .contain .content .links {
+        width: 60%;
+        height: 60%;
+        /* background-color: blue; */
+    }
+
+    footer .contain .content .shop-cat {
+        width: 40%;
+        height: 60%;
+        /* background-color: aquamarine; */
+    }
+    footer .contain .content .follow {
+        width: 30%;
+        height: 60%;
+        /* background-color: #FF6B00; */
+    }
+footer .contain .content .menu{
+    width: 40%;
+    height: 60%;
+    /* background-color: brown; */
+}
+    
+}
+@media only screen and (max-width:569px) {
+header .navbar .logo {
+    width: 15%;
+    height: 50px;
+}
+header .navbar .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+}
+
+
+@media only screen and (max-width:561px) {
+header .navbar .top-row .navs{
+    width: 60%;
+    /* background-color: blueviolet; */
+}
+
+}
+@media only screen and (max-width:536px) {
+footer {
+    height: 180vh;
+}
+footer .contain .logo {
+    height: 10%;
+    /* background-color: chocolate; */
+}
+footer .contain .content {
+    height: 80%;
+    /* background-color: cadetblue; */
+}
+footer .contain .content .links {
+    width: 90%;
+    height: 23%;
+    /* background-color: #22dfa7; */
+}
+footer .contain .content .links .text{
+    height: 90%;
+
+}
+footer .contain .content .shop-cat {
+    width: 90%;
+    height: 30%;
+    /* background-color: antiquewhite; */
+}
+footer .contain .content .shop-cat .textt{
+    height: 90%;
+}
+footer .contain .content .follow {
+    height: 90%;
+    height: 10%;
+    /* background-color: blue; */
+}
+footer .contain .content .menu{
+    height: 20%;
+    width: 90%;
+    /* background-color: blueviolet; */
+}
+footer .contain .privacy {
+    height: 10%;
+    /* background-color: burlywood; */
+}
+}
+/* @media only screen and (max-width:496px) {
+    footer{
+        height: 160vh;
+    }
+    
+    footer .contain .content .links {
+        width: 90%;
+        height: 30%;
+    }
+    footer .contain .content .links .text {
+        height: 80%;
+    }
+    footer .contain .content .shop-cat {
+        width: 90%;
+        height: 40%;
+    }
+    footer .contain .logo {
+    height: 10%;
+    margin-top: 30px;
+    
+}
+footer .contain .privacy p {
+    font-size: var(--fs-20);
+}
+
+} */
+/* @media only screen and (max-width:470px) {
+    header nav .logo {
+        width: 15%;
+    }
+header nav .search {
+    width: 50%;
+}
+header nav .search input::placeholder {
+    font-size: var(--fs-20);
+}
+header nav .icon {
+    width: 15%;
+}
+} */
+    @media only screen and (max-width:470px) {
+        .navbar {
+            height: 12vh;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        /* .search-row{
+            height: 50px;
+        } */
+        .search-row input {
+            height: 100%;
+            
+        }
+        header .navbar .logo {
+            width: 20%;
+            height: 50px;
+}
+header .navbar .logo img{
+    width: 100%;
+    height: 100%;
+}
+}
+@media only screen and (max-width:384px) {
+    .search-row {
+        width: 100%;
+    }
+    .search-row input{
+        width: 90%;
+    }
+    .search-row input::placeholder{
+        font-size: var(--fs-22);
+    }
+}
+@media only screen and (max-width:384px) {
+footer .contain .privacy a p{
+    font-size: var(--fs-20);
+}
+}

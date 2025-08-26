@@ -1,0 +1,781 @@
+:root {
+    --fs-75: 75px;
+    --fs-48: 48px;
+    --fs-46: 46px;
+    --fs-40: 40px;
+    --fs-36: 36px;
+    --fs-32: 32px;
+    --fs-28: 28px;
+    --fs-30: 30px;
+    --fs-24: 24px;
+    --fs-22: 22px;
+    --fs-20: 20px;
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-regular: 400;
+}
+
+#order {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#order .order-container {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#order .order-container .checkout {
+    width: 40%;
+    height: 100%;
+}
+
+#order .order-container .checkout h1 {
+    width: 95%;
+    text-align: start;
+    font-size: 32px;
+}
+
+#order .order-container .checkout .hd {
+    width: 88%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#order .order-container .checkout .hd h2 {
+    font-size: 24px;
+}
+
+#order .order-container .checkout .contact {
+    width: 95%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+#order .order-container .checkout .contact h2 {
+    font-size: 20px;
+}
+
+#order .order-container .checkout .contact input {
+    width: 90%;
+    height: 40px;
+    
+}
+
+#order .order-container .checkout .contact input::placeholder {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#order .order-container .checkout .shoping {
+    width: 95%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#order .order-container .checkout .shoping h2 {
+    font-size: 20px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#order .order-container .checkout .shoping .name input {   
+    width: 90%;
+    height: 40px;
+
+}
+
+#order .order-container .checkout .shoping .name input::placeholder {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.input-error {
+    border: 2px solid red;
+}
+.input-error {
+    border: 2px solid red;
+}
+
+#order .order-container .checkout .shoping .name input{
+    width: 45%;
+    height: 40px;
+}
+#order .order-container .checkout .shoping #state {
+    width: 90%;
+    height: 40px;
+}
+#order .order-container .checkout .shoping select{
+font-size: var(--fs-22);
+color: #5e5e5e;
+
+}
+#order .order-container .checkout .shoping select option{
+    padding-left: 10px;
+}
+#order .order-container .checkout .shoping input::placeholder {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#order .order-container .checkout .shoping .hd-two {
+    /* height: 20%; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ #order .order-container .checkout .shoping .btn {
+    width: 92%;
+    display: flex;
+    justify-content: end;
+}
+input.error, select.error {
+    border: 2px solid red;
+}
+
+#order .order-container .checkout .shoping #address{
+    width: 90%;
+    height: 100px;
+}
+
+#order .order-container .checkout .shoping .btn a button {
+    width: 230px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#order .order-container .checkout .shoping .btn button i {
+    font-size: 24px;
+}
+/* Popup overlay full screen */
+/* .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 139, 34, 0.9); 
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+#orderpopup{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* Popup content modal */
+/* .popup .popup-content {
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 300px;
+    animation: popupFade 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@keyframes popupFade {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#closePopup {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    
+} */
+
+/* Popup background overlay */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Popup box */
+.popup-content {
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+/* Popup text styles */
+.popup-content h2 {
+    color: #28a745; /* Green success color */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Close button */
+#closePopup {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#closePopup:hover {
+    background-color: #218838;
+}
+
+/* Fade in effect for overlay */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Scale up effect for popup box */
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+#order .order-container .total {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+
+}
+
+#order .order-container .total .head {
+    width: 95%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#order .order-container .total .change-con {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+#order .order-container .total .change {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    gap: 30px;
+}
+
+#order .order-container .total .change img {
+    width: 200px;
+    height: 180px;
+    background-color: rgb(215, 213, 213);
+}
+
+#order .order-container .total .change .align {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#order .order-container .total .change .align .align-one {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#order .order-container .total .change .align .align-one a h2 {
+    color: black;
+
+}
+
+#order .order-container .total .change .align .align-two {
+    width: 90%;
+}
+
+#order .order-container .total .change .align .align-three {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#order .order-container .total .change-con hr {
+    width: 660px;
+    height: 1px;
+    margin-top: 10px;
+    background-color: black;
+}
+
+#order .order-container .total .subtotal {
+    width: 95%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#order .order-container .total .subtotal .ttl-one {
+    width: 95%;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#order .order-container .total .subtotal hr {
+    width: 660px;
+    height: 1px;
+    background-color: black;
+}
+
+#order .order-container .final {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* media query */
+:root {
+
+    --fs-40: 36px;
+    --fs-36: 34px;
+    --fs-32: 30px;
+    --fs-28: 24px;
+    --fs-24: 22px;
+    --fs-22: 18px;
+    --fs-20: 17px;
+    --fs-16: 16px;
+    --fs-14: 14px;
+
+}
+
+@media only screen and (max-width:1440px) {
+    #order {
+        height: 150vh;
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    #order .order-container .total .change-con hr {
+        width: 90%;
+    }
+
+    #order .order-container .total .subtotal hr {
+        width: 93%;
+    }
+}
+
+@media only screen and (max-width:1221px) {
+    #order {
+        height: 160vh;
+    }
+
+    #order .order-container .checkout {
+        height: 100%;
+        width: 40%;
+    }
+
+    #order .order-container .checkout .contact input {
+        width: 90%;
+        height: 40px;
+    }
+
+    #order .order-container .checkout .shoping .name {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #order .order-container .checkout .shoping .name input {
+        width: 90%;
+        height: 40px;
+    }
+
+    #order .order-container .checkout .shoping input {
+        width: 400px;
+        height: 40px;
+    }
+
+}
+
+
+@media only screen and (max-width:1179px) {
+    #order .order-container .checkout .hd h2 {
+        font-size: var(--fs-22);
+    }
+
+    #order .order-container .checkout .contact h2 {
+        font-size: var(--fs-22);
+
+    }
+
+    #order .order-container .checkout .shoping h2 {
+        font-size: var(--fs-22);
+
+    }
+
+    #order .order-container .total .change .align {
+        height: 80%;
+    }
+
+    #order .order-container .total .change .align .align-one h2 {
+        font-size: var(--fs-22);
+
+    }
+
+    #order .order-container .total .change .align .align-two h2 {
+        font-size: var(--fs-22);
+
+    }
+
+    #order .order-container .total .subtotal .ttl-one h2 {
+        font-size: var(--fs-22);
+    }
+
+    #order .order-container .final h2 {
+        font-size: var(--fs-24);
+
+    }
+}
+
+@media only screen and (max-width:1026px) {
+    #order .order-container .checkout h1 {
+        font-size: var(--fs-28);
+    }
+
+    #order .order-container .checkout .shoping h2 {
+        font-size: var(--fs-22);
+    }
+}
+
+@media only screen and (max-width:1026px) {
+    #order {
+        height: 250vh;
+        margin-top: 20px;
+    }
+
+    #order .order-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+
+    }
+
+    #order .order-container .total {
+        width: 90%;
+        height: 60%;
+
+    }
+
+    #order .order-container .total .change-con {
+        height: 100%;
+    }
+
+    #order .order-container .checkout {
+        width: 90%;
+        height: 80%;
+    }
+
+    #order .order-container .checkout .contact {
+        width: 80%;
+    }
+
+    #order .order-container .checkout .contact input {
+        width: 80%;
+
+    }
+
+    #order .order-container .checkout .shoping .name {
+        gap: 10px;
+        width: 90%;
+    }
+
+    #order .order-container .checkout .shoping .name input {
+        width: 74%;
+        height: 40px;
+    }
+
+    #order .order-container .checkout .shoping input {
+        width: 66%;
+    }
+    #order .order-container .checkout .shoping #address{
+    width: 67%;
+    height: 100px;
+}
+#order .order-container .checkout .shoping #state {
+    width: 67%;
+    height: 40px;
+}
+ #order .order-container .checkout .shoping .btn {
+    width: 67%;
+ }
+}
+
+@media only screen and (max-width:638px) {
+    #order .order-container .total .head h2 {
+        font-size: var(--fs-24);
+    }
+
+    #order .order-container .checkout h1 {
+        font-size: var(--fs-24);
+
+    }
+
+    #order .order-container .total .change .align .align-one {
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+    }
+     #order .order-container .checkout .shoping .btn {
+        width: 67%;
+     }
+ #order .order-container .checkout .shoping .btn #orderBtn{
+    width: 180px;
+    height: 50px;
+ }
+ #order .order-container .checkout .shoping .btn #orderBtn button{
+    width: 100%;
+    height: 100%;
+ }
+#order .order-container .checkout .shoping .name input { 
+    width: 100%;  
+}
+#order .order-container .checkout .shoping #state {
+    width: 90%;  
+
+}
+#order .order-container .checkout .shoping #address{
+    width: 90%;
+}
+#order .order-container .checkout .contact input {
+    width: 107%;
+}
+ #order .order-container .checkout .shoping .btn {
+    width: 90%;
+ }
+}
+
+@media only screen and (max-width:475px) {
+    #order {
+        height: 260vh;
+    }
+    
+    #order .order-container .total {
+        height: 70%;
+    }
+    
+    #order .order-container .total .head h2 {
+        
+        font-size: 20px;
+    }
+    #order .order-container .total .change .align .align-one h2 {
+        font-size: var(--fs-20);
+    }
+    #order .order-container .total .change .align .align-three h2{
+        font-size: var(--fs-22);
+    }
+    #order .order-container .total .subtotal .ttl-one h2{
+        font-size: var(--fs-22);
+    }
+    #order .order-container .checkout .hd h2 {
+        font-size: var(--fs-20);
+    }
+    
+    #order .order-container .checkout .contact h2 {
+        font-size: var(--fs-20);
+        
+    }
+    
+    #order .order-container .checkout .shoping h2 {
+        font-size: var(--fs-20);
+        
+    }
+    #order .order-container .checkout .shoping .name input::placeholder {
+        font-size: var(--fs-20);
+    }
+}
+@media only screen and (max-width:428px) {
+    #order{
+        height: 300vh;
+    }
+    #order .order-container {
+        height: 100%;
+    }
+    #order .order-container .total{
+        height: 70%;
+        
+    }
+    #order .order-container .total .change {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    #order .order-container .checkout{
+        height: 50%;
+    }
+    #order .order-container .total .change .align {
+        height: 30%;
+    }
+    #order .order-container .total .change img {
+        width: 95%;
+        height: 60%;
+    }
+    #order .order-container .total .change-con {
+        gap: 30px;
+    }
+    #order .order-container .total .change .align .align-one {
+        display: flex;
+        height: 40%;
+        width: 90%;
+        
+    }
+    #order .order-container .total .head {
+        margin: 20px 0px;  
+    }
+    #order .order-container .total .subtotal {
+        height: 90%;
+        gap: 10px;
+        margin: 10px 0px;
+    }
+    #order .order-container .final {
+        margin: 10px 0px;
+    }
+    /* #order .order-container .checkout .contact input {
+        width: 90%;
+    }
+    #order .order-container .checkout .shoping .name input {
+        width: 94%;
+        
+    }
+    #order .order-container .checkout .shoping input {
+        width: 85%;
+    } */
+
+}
+@media only screen and (max-width:428px) {
+    #order .order-container .total .change .align .align-one h2{
+        width: 100%;
+    }
+    #order .order-container .total .subtotal .ttl-one h2{
+        font-size: var(--fs-16);
+    }
+    #order .order-container .final h2{
+        font-size: var(--fs-16);
+    }
+    #order .order-container .checkout .shoping .name input::placeholder {
+        font-size: var(--fs-16);
+    }
+    #order .order-container .checkout .contact input::placeholder{
+        font-size: var(--fs-16);
+        
+    }
+    #order .order-container .checkout .shoping input::placeholder{
+        font-size: var(--fs-16);
+        
+    }
+    #order .order-container .checkout .hd h2 {
+        font-size: var(--fs-14);
+    }
+    
+         #order .order-container .checkout .shoping .btn {
+        width: 67%;
+     }
+ #order .order-container .checkout .shoping .btn #orderBtn{
+    width: 120px;
+    height: 50px;
+    font-size: var(--fs-16);
+ }
+}
+@media only screen and (max-width:364px) {
+    #order .order-container .total .change .align .align-one h2{
+font-size: var(--fs-16);
+    }
+    #order .order-container .total .change .align .align-two h2{
+font-size: var(--fs-16);
+    }
+    #order .order-container .total .change .align {
+        width: 90%;
+    }
+#order .order-container .total .change .align .align-three {
+    width: 100%;
+}
+#order .order-container .total .head h2{
+    font-size: var(--fs-22);
+}
+}
